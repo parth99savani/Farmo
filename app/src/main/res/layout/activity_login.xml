@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:fontFamily="@font/blackfat"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="@color/colorPrimary"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#474747"/>
+
+        <LinearLayout
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:ccp_textSize="18sp"
+                app:ccp_setCountryByTimeZone="true"
+                app:ccp_showFlag="false"
+                app:ccp_hideNameCode="true"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextMobileNo"
+                android:hint="Enter Mobile Number"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:inputType="phone"
+                android:background="@drawable/rectangle"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_LetsGo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:text="Let's Go"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/login_bottom_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/btnBackLogin"
+        android:src="@drawable/ic_arrow_back_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

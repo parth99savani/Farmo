@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/checkBoxWifi"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Free Wifi"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_wifi"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="AC"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_air_conditioner"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="TV"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_tv"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxParking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Parking"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_parking"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxGeyser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Geyser"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_geyser"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxCCTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="CCTV Cameras"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_cctv"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxGames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Games"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_games"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxKitchen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Kitchen"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_kitchen"
+        android:drawablePadding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRefrigerator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layoutDirection="rtl"
+        android:text="Refrigerator"
+        android:textSize="14sp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:buttonTint="@drawable/checkbox_color"
+        android:drawableLeft="@drawable/ic_refrigerator"
+        android:drawablePadding="15dp"/>
+
+</LinearLayout>

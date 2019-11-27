@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".BookingDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layoutToolbarBookingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_booking_details"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txtToolbarTitleDetails"
+                android:text="Booking Details"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/layoutToolbarBookingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCancelStatus"
+                android:visibility="gone"
+                android:text="Cancelled"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#ff0000"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp">
+
+                        <TextView
+                            android:text="Booking ID"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtBookingIdDetails"
+                            android:text="FB0005452"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:text="Booking On"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtBookingDateTimeDetails"
+                            android:text="Fri, 05 Jun"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_imageBookingDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtFarmNameDetails"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/btnShowMapDetails"
+                            android:src="@drawable/map_google"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtFarmAddressDetails"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorTextGray"
+                                android:text="Sevani, Surat, Gujarat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/label_rate_farm_view"
+                                android:orientation="horizontal"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/txtRateDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5/5"
+                                    android:textSize="13sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginLeft="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtRateCountDetails"
+                                    android:text="(23)"
+                                    android:textSize="13sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:drawableLeft="@drawable/ic_star_black_24dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginLeft="3dp"
+                                    android:drawablePadding="2dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:textColor="@color/colorTextGray"
+                            android:text="Total Amount Paid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/txtAmountPaidDetails"
+                            android:gravity="right"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/black"
+                            android:text="₹4500"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:paddingVertical="5dp">
+
+                        <LinearLayout
+                            android:layout_weight="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Check In"
+                                    android:textSize="11sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/txtDateCheckInDetails"
+                                    android:text="Thu, 27 Jun"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                    android:id="@+id/txtTimeCheckInDetails"
+                                    android:text="6:00 PM"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:background="@drawable/night_count_background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginHorizontal="25dp"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txtNightCountDetails"
+                                    android:text="2N"
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:text="Check out"
+                                    android:textSize="11sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/txtDateCheckOutDetails"
+                                    android:text="Thu, 27 Jun"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                    android:id="@+id/txtTimeCheckOutDetails"
+                                    android:text="6:00 PM"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#50707070" />
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtGuestDetails"
+                                android:text="5 Guests"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewRating"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:id="@+id/txtTitleRateDialog"
+                        android:text="Rate this Farm"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBarDetails"
+                        android:stepSize="1"
+                        android:layout_below="@+id/txtTitleRateDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:id="@+id/btnSubmitRatingDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:text="Submit"
+                        android:ems="6"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rounded_button"
+                        android:layout_below="@+id/ratingBarDetails"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_cancelBooking"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:text="Cancel booking"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/background_booked"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

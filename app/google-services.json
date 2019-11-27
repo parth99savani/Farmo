@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "392801825081",
+    "firebase_url": "https://farm-9464e.firebaseio.com",
+    "project_id": "farm-9464e",
+    "storage_bucket": "farm-9464e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392801825081:android:7428a78ba903c4fe",
+        "android_client_info": {
+          "package_name": "com.popseven.farm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392801825081-1s7r9r6nsu6i67ecqfuu17ri1lqq8629.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkI1UScwc1NMUTg8ipv0ODJc8JW_aKm_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392801825081-1s7r9r6nsu6i67ecqfuu17ri1lqq8629.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

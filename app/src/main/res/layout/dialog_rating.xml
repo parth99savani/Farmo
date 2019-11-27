@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtTitleRateDialog"
+            android:text="Rate this Farm"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:stepSize="1"
+            android:layout_below="@+id/txtTitleRateDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btnLaterRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Later"
+                android:ems="6"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:background="@drawable/ractangle3"/>
+
+            <Button
+                android:id="@+id/btnSubmitRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:ems="6"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

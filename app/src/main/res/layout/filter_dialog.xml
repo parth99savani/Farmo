@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layoutToolbarFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_filter"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/layoutToolbarFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/priceRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:title="Price Range"
+                app:icon="@drawable/ic_rupee"
+                app:inner_view="@layout/price_range_view"
+                app:expandOnClick="true" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:title="Amenities"
+                app:icon="@drawable/ic_hotel"
+                app:inner_view="@layout/amenities_view"
+                app:expandOnClick="true" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:title="Discount"
+                app:icon="@drawable/ic_discount"
+                app:inner_view="@layout/discount_view"
+                app:expandOnClick="true" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:title="Rating"
+                app:icon="@drawable/ic_rating_24dp"
+                app:inner_view="@layout/rating_view"
+                app:expandOnClick="true"
+                android:layout_marginBottom="65dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_applyFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:text="Apply"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_filter_apply"/>
+
+</RelativeLayout>

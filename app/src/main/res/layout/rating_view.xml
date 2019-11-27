@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <RadioGroup
+        android:id="@+id/radioRating"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio4Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 Stars &amp; Up"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl" />
+
+        <RadioButton
+            android:id="@+id/radio3Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Stars &amp; Up"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/radio2Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 Stars &amp; Up"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/radio1Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Stars &amp; Up"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

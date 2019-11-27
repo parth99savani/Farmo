@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingSummaryActivity"
+    android:background="@color/backgroundColor">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layoutToolbarBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_booking_summary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txtToolbarTitle"
+                android:text="Booking Summary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/layoutToolbarBooking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_below="@+id/layoutToolbarBooking"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtNameBook"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtAddressBook"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextGray"
+                        android:text="Sevani, Surat, Gujarat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+
+                    <View
+                        android:layout_marginVertical="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/layoutCheckInBook"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:text="Check in"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/txtDateCheckInBook"
+                                android:text="Thu, 27 Jun"
+                                android:textSize="15sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:id="@+id/txtTimeCheckInBook"
+                                android:text="6:00 PM"
+                                android:textSize="15sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:background="@drawable/night_count_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginEnd="45dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtNightCountBook"
+                                android:text="2N"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutCheckOutBook"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:text="Check out"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/txtDateCheckOutBook"
+                                android:text="Thu, 27 Jun"
+                                android:textSize="15sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:id="@+id/txtTimeCheckOutBook"
+                                android:text="6:00 PM"
+                                android:textSize="15sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginVertical="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <TextView
+                        android:id="@+id/txtNoOfGuestBook"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:text="No. Of Guests : 10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtFinalPriceBook"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/black"
+                            android:text="₹4500"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtPriceFarmBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="₹6000"
+                            android:textSize="13sp"
+                            android:textColor="#707070"
+                            android:foreground="@drawable/strike" />
+
+                        <TextView
+                            android:id="@+id/txtDisscountBook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25% OFF"
+                            android:textSize="15sp"
+                            android:textColor="#ff0000"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="PRICE DETAILS"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorTextGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Farm Rent"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtGuestCapacityBook"
+                                    android:layout_marginTop="3dp"
+                                    android:text="For 15 Guests"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtPriceBook"
+                                    android:text="₹6000"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtPriceForNightBook"
+                                    android:layout_marginTop="3dp"
+                                    android:text="₹6000 x 1 nights"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/txtDisscountTextPerBook"
+                                android:layout_weight="1"
+                                android:text="Disscount (25% Off)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorTextGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtDisscountRupeesBook"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:text="-₹1500"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorTextGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Extra Guest"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtExtraGuestBook"
+                                    android:layout_marginTop="3dp"
+                                    android:text="₹200 x 1 Guest"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorTextGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txtExtraGuestRupeesBook"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:text="₹200"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorTextGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:text="GST (18%)"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorTextGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtGSTRupeesBook"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:text="₹846"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorTextGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:text="Amount Payable"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtAmountPayableBook"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:text="₹5546"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:textColor="@android:color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPriceButtonBook"
+                    android:textColor="@android:color/white"
+                    android:text="₹5546"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/btnContinueBook"
+                android:layout_weight="1"
+                android:text="Book Now"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

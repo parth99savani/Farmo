@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bookingCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutHader"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="15dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txtStatusBooking"
+                    android:text="Upcoming"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtBookingIdBooking"
+                    android:text="FM0005245"
+                    android:gravity="right"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageBooking"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/ring"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNameBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Farm House"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAddressBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Surat, Gujarat"
+                        android:textSize="14sp"
+                        android:textColor="#707070"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_placeholder_filled_point"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnRateNowBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Rate Now"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_button"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/txtDateTimeBooking"
+                    android:text="Booked on Fri, 05 Jun  9:44 PM"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/txtAmountPaidBooking"
+                    android:text="₹4500"
+                    android:gravity="right"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#50707070"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp"
+                android:paddingVertical="5dp">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Check In"
+                            android:textSize="11sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtDateCheckInBooking"
+                            android:text="Thu, 27 Jun"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:id="@+id/txtTimeCheckInBooking"
+                            android:text="6:00 PM"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/night_count_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="25dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtNightCountBooking"
+                            android:text="2N"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:text="Check out"
+                            android:textSize="11sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtDateCheckOutBooking"
+                            android:text="Thu, 27 Jun"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:id="@+id/txtTimeCheckOutBooking"
+                            android:text="6:00 PM"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#50707070" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtGuestBooking"
+                        android:text="5 Guests"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

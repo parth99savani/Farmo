@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/rangeSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:corner_radius="10"
+        app:min_value="1000"
+        app:max_value="15000"
+        app:gap="500"
+        app:steps="50"
+        app:bar_color="#ACABAB"
+        app:bar_highlight_color="@color/colorPrimary"
+        app:left_thumb_color="#224DC7"
+        app:right_thumb_color="#224DC7"
+        app:left_thumb_color_pressed="#143EB9"
+        app:right_thumb_color_pressed="#143EB9"
+        app:data_type="_integer" />
+
+    <TextView
+        android:id="@+id/textMin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/rangeSeekbar"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textMax1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/rangeSeekbar"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

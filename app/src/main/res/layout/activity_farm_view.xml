@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".FarmViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_imageFarmView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtFarmName"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/btnShowMap"
+                            android:src="@drawable/map_google"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtFarmAddress"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorTextGray"
+                                android:text="Sevani, Surat, Gujarat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/label_rate_farm_view"
+                                android:orientation="horizontal"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/txtRateFarm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5/5"
+                                    android:textSize="13sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginLeft="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtRateCountFarm"
+                                    android:text="(23)"
+                                    android:textSize="13sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:drawableLeft="@drawable/ic_star_black_24dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginLeft="3dp"
+                                    android:drawablePadding="2dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtGuestCapacityFarm"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorTextGray"
+                            android:text="Guest Capacity 15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/txtDisscountFarm"
+                            android:gravity="right"
+                            android:textSize="14sp"
+                            android:textColor="#ff0000"
+                            android:text="25% OFF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="8dp"
+                            android:drawableLeft="@drawable/ic_voucher"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#50707070" />
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtFarmCheckInTime"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorTextGray"
+                            android:text="Check in time : 8:00 PM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtFarmCheckOutTime"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorTextGray"
+                            android:text="Check out time : 7:00 PM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_features"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Description"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFarmDescription"
+                        android:text="Apple Farm House, located in Sevani Gam, Surat is charming place with soothing rooms. The Farm house have an large beautiful Garden. wbhjbsh dfbb efbhewfbjh efuuff fuf ffhef fhuefbfb efgfh efhfbhef
+fgehfvf efhugb ergugr efhghrveg efyrb efyrh34 efhb4huvbr4 rygy34t 4rgy4tb 4rby4vt fhv344rv ry34g 4vryh4y3"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorTextGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp">
+
+                    <TextView
+                        android:text="Property Policy"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFarmPolicy"
+                        android:text="a"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorTextGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_farm_view"
+        android:scaleX="2"/>
+
+    <ImageView
+        android:id="@+id/btnBackFarm"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <ToggleButton
+        android:id="@+id/btnFavoriteFarm"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_favorite"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn=""/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewBookNowBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtfarmPrice"
+                    android:textColor="@android:color/white"
+                    android:text="₹3500"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtfarmNightGuest"
+                    android:textColor="@android:color/white"
+                    android:text="For 1 Night &amp; 5 Guests"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/btnBookFarm"
+                android:layout_weight="1"
+                android:text="BOOK NOW"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <RadioGroup
+        android:id="@+id/radioDiscount"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio10Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10% Off or more"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl" />
+
+        <RadioButton
+            android:id="@+id/radio25Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25% Off or more"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/radio35Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="35% Off or more"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/radio50Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50% Off or more"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:buttonTint="@drawable/checkbox_color"
+            android:padding="18dp"
+            android:layoutDirection="rtl"/>
+
+    </RadioGroup>
+
+</LinearLayout>
